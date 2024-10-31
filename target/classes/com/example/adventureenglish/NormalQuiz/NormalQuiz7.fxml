@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adaventureenglish.NormalQuizController">
+   <children>
+      <ImageView fitHeight="1100.0" fitWidth="1936.0" layoutX="-2.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/Background.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="552.0" layoutY="245.0" text="단어" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="1267.0" layoutY="250.0" text="뜻" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="392.0" text="7." textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <Label fx:id="word" layoutX="1259.0" layoutY="403.0" text="손해" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="81.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputword" layoutX="392.0" layoutY="397.0" promptText="단어를 입력하세요">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </TextField>
+      <Label layoutX="659.0" layoutY="130.0" text="난이도 보통 문제" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="83.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl" layoutX="755.0" layoutY="504.0" prefHeight="188.0" prefWidth="503.0" textFill="#3c00ff">
+         <font>
+            <Font size="200.0" />
+         </font>
+      </Label>
+      <Button layoutX="840.0" layoutY="776.0" mnemonicParsing="false" onAction="#check7" text="채점하기">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Button>
+      <Button layoutX="1501.0" layoutY="782.0" mnemonicParsing="false" onAction="#next7" text="next">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
