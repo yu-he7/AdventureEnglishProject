@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adaventureenglish.differentController">
+   <children>
+      <ImageView fitHeight="1096.0" fitWidth="1942.0" layoutY="-3.0">
+         <image>
+            <Image url="@../../../images/Background.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="529.0" layoutY="83.0" prefHeight="212.0" prefWidth="794.0" text="난이도 어려움 영어" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="101.0" layoutY="118.0" mnemonicParsing="false" onAction="#back" prefHeight="77.0" prefWidth="195.0" text="뒤로가기" textFill="#3543ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Label layoutX="446.0" layoutY="253.0" text="단어" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="1273.0" layoutY="247.0" text="뜻" textFill="#fffdfd">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="word1" layoutX="359.0" layoutY="344.0" prefHeight="75.0" prefWidth="343.0" text="1. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word2" layoutX="359.0" layoutY="420.0" prefHeight="75.0" prefWidth="343.0" text="2. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean1" layoutX="1203.0" layoutY="337.0" prefHeight="75.0" prefWidth="357.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean2" layoutX="1204.0" layoutY="421.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word3" layoutX="360.0" layoutY="499.0" prefHeight="75.0" prefWidth="343.0" text="3. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean3" layoutX="1202.0" layoutY="496.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word5" layoutX="361.0" layoutY="648.0" prefHeight="75.0" prefWidth="343.0" text="5. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean4" layoutX="1194.0" layoutY="582.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word4" layoutX="360.0" layoutY="574.0" prefHeight="75.0" prefWidth="343.0" text="4. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean5" layoutX="1198.0" layoutY="657.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean6" layoutX="1195.0" layoutY="732.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word6" layoutX="361.0" layoutY="727.0" prefHeight="75.0" prefWidth="343.0" text="6. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word7" layoutX="361.0" layoutY="798.0" prefHeight="75.0" prefWidth="343.0" text="7. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean7" layoutX="1194.0" layoutY="799.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="word8" layoutX="360.0" layoutY="865.0" prefHeight="75.0" prefWidth="343.0" text="8. " textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="mean8" layoutX="1192.0" layoutY="869.0" prefHeight="75.0" prefWidth="343.0" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="1581.0" layoutY="117.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="195.0" text="문제풀기" textFill="#3543ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
