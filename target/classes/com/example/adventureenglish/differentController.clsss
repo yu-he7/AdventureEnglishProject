@@ -1,0 +1,322 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package com.example.adaventureenglish;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+public class differentController {
+    @FXML
+    private Label lbl;
+    @FXML
+    private Label Point;
+    int QuizSum;
+    int QuizSum2;
+    int QuizSum3;
+    @FXML
+    private TextField word;
+    @FXML
+    private TextField mean;
+    @FXML
+    private ListView wordList;
+    @FXML
+    private ListView meanlist;
+    @FXML
+    List<String> words;
+    List<String> means;
+    @FXML
+    private Label word1;
+    @FXML
+    private Label word2;
+    @FXML
+    private Label word3;
+    @FXML
+    private Label word4;
+    @FXML
+    private Label word5;
+    @FXML
+    private Label word6;
+    @FXML
+    private Label word7;
+    @FXML
+    private Label word8;
+    @FXML
+    private Label mean1;
+    @FXML
+    private Label mean2;
+    @FXML
+    private Label mean3;
+    @FXML
+    private Label mean4;
+    @FXML
+    private Label mean5;
+    @FXML
+    private Label mean6;
+    @FXML
+    private Label mean7;
+    @FXML
+    private Label mean8;
+    int i;
+
+    public differentController() {
+        this.QuizSum = EasyQuizController.sum;
+        this.QuizSum2 = NormalQuizController.sum;
+        this.QuizSum3 = HardQuizController.sum;
+        this.words = new ArrayList();
+        this.means = new ArrayList();
+        this.i = 0;
+    }
+
+    @FXML
+    private void easybtn(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/different1.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void hardbtn(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/different3.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void normalbtn(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/different2.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void back(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/different.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void click(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/lastpage.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void addbutton(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("different/lastdifferent.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void Main(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("LoginedView.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void Quiz(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("EasyQuiz/EasyQuiz1.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void Quiz2(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("NormalQuiz/NormalQuiz1.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void Quiz3(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("HardQuiz/HardQuiz1.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void PointView(ActionEvent event) throws Exception {
+        if (this.QuizSum == 100) {
+            this.lbl.setText("참 잘했어요");
+            this.Point.setText("100점입니다!!!");
+        } else if (this.QuizSum == 90) {
+            this.lbl.setText("잘했어요");
+            this.Point.setText("90점입니다!!!");
+        } else if (this.QuizSum == 80) {
+            this.lbl.setText("잘했는데 아쉽네요");
+            this.Point.setText("80점입니다!!!");
+        } else if (this.QuizSum == 70) {
+            this.lbl.setText("좀더 열심히 해봅시다");
+            this.Point.setText("70점입니다!!!");
+        } else if (this.QuizSum == 60) {
+            this.lbl.setText("노력이 필요할거 같아요");
+            this.Point.setText("60점입니다!!!");
+        } else if (this.QuizSum == 50) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("50점입니다");
+        } else if (this.QuizSum == 40) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("40점입니다");
+        } else if (this.QuizSum == 30) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("30점입니다");
+        } else if (this.QuizSum == 20) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("20점입니다");
+        } else if (this.QuizSum == 10) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("10점입니다");
+        } else if (this.QuizSum == 0) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("0점입니다");
+        }
+
+        if (this.QuizSum2 == 100) {
+            this.lbl.setText("참 잘했어요");
+            this.Point.setText("100점입니다!!!");
+        } else if (this.QuizSum2 == 90) {
+            this.lbl.setText("잘했어요");
+            this.Point.setText("90점입니다!!!");
+        } else if (this.QuizSum2 == 80) {
+            this.lbl.setText("잘했는데 아쉽네요");
+            this.Point.setText("80점입니다!!!");
+        } else if (this.QuizSum2 == 70) {
+            this.lbl.setText("좀더 열심히 해봅시다");
+            this.Point.setText("70점입니다!!!");
+        } else if (this.QuizSum2 == 60) {
+            this.lbl.setText("노력이 필요할거 같아요");
+            this.Point.setText("60점입니다!!!");
+        } else if (this.QuizSum2 == 50) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("50점입니다");
+        } else if (this.QuizSum2 == 40) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("40점입니다");
+        } else if (this.QuizSum2 == 30) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("30점입니다");
+        } else if (this.QuizSum2 == 20) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("20점입니다");
+        } else if (this.QuizSum2 == 10) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("10점입니다");
+        } else if (this.QuizSum2 == 0) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("0점입니다");
+        }
+
+        if (this.QuizSum3 == 100) {
+            this.lbl.setText("참 잘했어요");
+            this.Point.setText("100점입니다!!!");
+        } else if (this.QuizSum3 == 90) {
+            this.lbl.setText("잘했어요");
+            this.Point.setText("90점입니다!!!");
+        } else if (this.QuizSum3 == 80) {
+            this.lbl.setText("잘했는데 아쉽네요");
+            this.Point.setText("80점입니다!!!");
+        } else if (this.QuizSum3 == 70) {
+            this.lbl.setText("좀더 열심히 해봅시다");
+            this.Point.setText("70점입니다!!!");
+        } else if (this.QuizSum3 == 60) {
+            this.lbl.setText("노력이 필요할거 같아요");
+            this.Point.setText("60점입니다!!!");
+        } else if (this.QuizSum3 == 50) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("50점입니다");
+        } else if (this.QuizSum3 == 40) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("40점입니다");
+        } else if (this.QuizSum3 == 30) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("30점입니다");
+        } else if (this.QuizSum3 == 20) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("20점입니다");
+        } else if (this.QuizSum3 == 10) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("10점입니다");
+        } else if (this.QuizSum3 == 0) {
+            this.lbl.setText("영어공부를 많이 하셔야 할거 같습니다");
+            this.Point.setText("0점입니다");
+        }
+
+    }
+
+    @FXML
+    private void to(ActionEvent event) throws IOException {
+        Parent newScreenParent = (Parent)FXMLLoader.load(this.getClass().getResource("differentnew.fxml"));
+        Scene newScreenScene = new Scene(newScreenParent);
+        Stage currentStage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        currentStage.setScene(newScreenScene);
+        currentStage.show();
+    }
+
+    @FXML
+    public void add(ActionEvent event) throws Exception {
+        if (this.i < 8) {
+            this.words.add(this.word.getText());
+            this.means.add(this.mean.getText());
+            this.wordList.setItems(FXCollections.observableArrayList(this.words));
+            this.meanlist.setItems(FXCollections.observableArrayList(this.means));
+            ++this.i;
+            if (this.i == 8) {
+                this.word1.setText((String)this.words.get(0));
+                this.word2.setText((String)this.words.get(1));
+                this.word3.setText((String)this.words.get(2));
+                this.word4.setText((String)this.words.get(3));
+                this.word5.setText((String)this.words.get(4));
+                this.word6.setText((String)this.words.get(5));
+                this.word7.setText((String)this.words.get(6));
+                this.word8.setText((String)this.words.get(7));
+                this.mean1.setText((String)this.means.get(0));
+                this.mean2.setText((String)this.means.get(1));
+                this.mean3.setText((String)this.means.get(2));
+                this.mean4.setText((String)this.means.get(3));
+                this.mean5.setText((String)this.means.get(4));
+                this.mean6.setText((String)this.means.get(5));
+                this.mean7.setText((String)this.means.get(6));
+                this.mean8.setText((String)this.means.get(7));
+            }
+        }
+
+    }
+}
