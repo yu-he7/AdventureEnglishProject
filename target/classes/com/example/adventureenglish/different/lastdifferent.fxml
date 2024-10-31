@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adaventureenglish.differentController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <ImageView fitHeight="1092.0" fitWidth="1932.0" layoutX="-12.0" layoutY="-12.0">
+               <image>
+                  <Image url="@../../../../images/Background.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="730.0" layoutY="181.0" prefHeight="150.0" prefWidth="1034.0" text="추가 하고 싶은 단어와 뜻을 입력하세요." textFill="WHITE">
+               <font>
+                  <Font size="55.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="572.0" layoutY="407.0" prefHeight="42.0" prefWidth="465.0" text="단어" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <Button fx:id="추가하기" layoutX="913.0" layoutY="661.0" mnemonicParsing="false" onAction="#add" prefHeight="147.0" prefWidth="563.0" text="추가하기" textFill="#3543ff">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="1368.0" layoutY="408.0" prefHeight="42.0" prefWidth="465.0" text="뜻" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="word" layoutX="642.0" layoutY="509.0" prefHeight="61.0" prefWidth="334.0" promptText="단어를 추가해주세요">
+               <font>
+                  <Font size="31.0" />
+               </font></TextField>
+            <TextField fx:id="mean" layoutX="1444.0" layoutY="509.0" prefHeight="61.0" prefWidth="320.0" promptText="뜻을 추가해주세요">
+               <font>
+                  <Font size="31.0" />
+               </font></TextField>
+            <VBox layoutX="1659.0" layoutY="243.0" prefHeight="234.0" prefWidth="136.0" />
+            <ListView fx:id="wordList" layoutX="97.0" layoutY="108.0" prefHeight="868.0" prefWidth="260.0" />
+            <ListView fx:id="meanlist" layoutX="355.0" layoutY="108.0" prefHeight="868.0" prefWidth="260.0" />
+            <Button layoutX="984.0" layoutY="832.0" mnemonicParsing="false" onAction="#to" prefHeight="99.0" prefWidth="419.0" text="추가한 문제 풀기" textFill="#3543ff">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

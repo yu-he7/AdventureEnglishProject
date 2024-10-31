@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adaventureenglish.differentController">
+   <children>
+      <ImageView fitHeight="1096.0" fitWidth="1942.0" layoutX="-5.0" layoutY="-2.0">
+         <image>
+            <Image url="@../../../../images/Background.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="434.0" layoutY="99.0" prefHeight="212.0" prefWidth="1039.0" text="AdventureEnglish온걸 환영해" textFill="WHITE">
+         <font>
+            <Font size="62.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="636.0" layoutY="315.0" prefHeight="81.0" prefWidth="657.0" text="난이도를 선택해봐!" textFill="WHITE">
+         <font>
+            <Font size="68.0" />
+         </font>
+      </Label>
+      <VBox layoutX="497.0" layoutY="478.0" prefHeight="500.0" prefWidth="900.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#easybtn" prefHeight="166.0" prefWidth="900.0" text="easy">
+               <font>
+                  <Font size="35.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" onAction="#normalbtn" prefHeight="166.0" prefWidth="900.0" text="normal">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#hardbtn" prefHeight="166.0" prefWidth="900.0" text="hard">
+               <font>
+                  <Font size="35.0" />
+               </font></Button>
+         </children>
+      </VBox>
+      <Button layoutX="101.0" layoutY="118.0" mnemonicParsing="false" onAction="#click" prefHeight="77.0" prefWidth="269.0" text="단어추가하기" textFill="#3543ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

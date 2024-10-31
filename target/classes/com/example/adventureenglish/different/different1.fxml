@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adaventureenglish.differentController">
+   <children>
+      <ImageView fitHeight="1096.0" fitWidth="1942.0" layoutX="-8.0" layoutY="-13.0">
+         <image>
+            <Image url="@../../../../images/Background.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="47.0" prefHeight="212.0" prefWidth="794.0" text="난이도 쉬움 영어" textFill="WHITE">
+         <font>
+            <Font size="60.0" />
+         </font>
+      </Label>
+      <Button layoutX="91.0" layoutY="108.0" mnemonicParsing="false" onAction="#back" prefHeight="77.0" prefWidth="195.0" text="뒤로가기" textFill="#3543ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+      <Label layoutX="436.0" layoutY="243.0" text="단어" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="1263.0" layoutY="237.0" text="뜻" textFill="#fffdfd">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="334.0" prefHeight="75.0" prefWidth="343.0" text="1. aunt" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="410.0" prefHeight="75.0" prefWidth="343.0" text="2. away" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1193.0" layoutY="327.0" prefHeight="75.0" prefWidth="357.0" text="아주머니" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1194.0" layoutY="411.0" prefHeight="75.0" prefWidth="343.0" text="항상" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="489.0" prefHeight="75.0" prefWidth="343.0" text="3. back" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1192.0" layoutY="486.0" prefHeight="75.0" prefWidth="343.0" text="등" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="638.0" prefHeight="75.0" prefWidth="343.0" text="5. cute" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1142.0" layoutY="572.0" prefHeight="75.0" prefWidth="343.0" text="   아기" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="564.0" prefHeight="75.0" prefWidth="343.0" text="4. baby" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1188.0" layoutY="647.0" prefHeight="75.0" prefWidth="343.0" text="귀여운" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1185.0" layoutY="722.0" prefHeight="75.0" prefWidth="343.0" text="순환" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="717.0" prefHeight="75.0" prefWidth="343.0" text="6. cycle" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="788.0" prefHeight="75.0" prefWidth="343.0" text="7. dad" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1184.0" layoutY="789.0" prefHeight="75.0" prefWidth="343.0" text="아빠" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="350.0" layoutY="855.0" prefHeight="75.0" prefWidth="343.0" text="8. dance" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="1181.0" layoutY="859.0" prefHeight="75.0" prefWidth="343.0" text="춤" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Button layoutX="1583.0" layoutY="114.0" mnemonicParsing="false" onAction="#Quiz" prefHeight="77.0" prefWidth="195.0" text="문제풀기" textFill="#3543ff">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
